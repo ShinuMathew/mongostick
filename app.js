@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/mongostick')
+mongoose.connect('mongodb://localhost:27017/mongostick')
     .then(() => console.log('Connected to mongo'))
     .catch(err => console.error(`Unable to connect to mongo db. Following error occured :\n${err}`))
 
